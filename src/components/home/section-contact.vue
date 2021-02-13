@@ -19,7 +19,7 @@
 					<div class="user_info">
 						<textarea :placeholder="$t('placeholderMessage')" class="input-form pt-10" id="mensaje" name="mensaje" required></textarea>
 					</div>
-					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend" @click="saveForm">
+					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend">
 				</form>
 			</div>
 			<!-- <div class="form-contact">
