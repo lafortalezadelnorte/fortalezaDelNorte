@@ -61,14 +61,6 @@
 </template>
 
 <script>
-async function saveForm() {
-	try {
-		const response = await 
-	} catch (error) {
-		console.log(error);	
-	}
-}
-
 export default {
 	name: 'section-contact',
 };
