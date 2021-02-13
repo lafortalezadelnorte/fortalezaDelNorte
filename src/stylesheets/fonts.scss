@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Champagne&Limousines';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Champagne&Limousines'), url('/static/fonts/Champagne-_-Limousines.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Champagne&Limousines-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Champagne&Limousines-Bold'), url('/static/fonts/Champagne-_-Limousines-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Champagne&Limousines-Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Champagne&Limousines-Italic'), url('/static/fonts/Champagne-_-Limousines-Italic.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Champagne&Limousines-Bold-Italic';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Champagne&Limousines-Bold-Italic'), url('/static/fonts/Champagne-_-Limousines-Bold-Italic.woff') format('woff');
+}

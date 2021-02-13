@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="instagram" width="40.052" height="40.052" viewBox="0 0 40.052 40.052">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}
+        </style>
+    </defs>
+    <g id="Grupo_21" data-name="Grupo 21">
+        <g id="Grupo_20" data-name="Grupo 20">
+            <path id="Trazado_26" d="M27.536 0h-15.02A12.518 12.518 0 0 0 0 12.516v15.02a12.518 12.518 0 0 0 12.516 12.516h15.02a12.518 12.518 0 0 0 12.516-12.516v-15.02A12.518 12.518 0 0 0 27.536 0zM36.3 27.536a8.771 8.771 0 0 1-8.764 8.764h-15.02a8.771 8.771 0 0 1-8.761-8.761V12.516a8.771 8.771 0 0 1 8.761-8.761h15.02a8.771 8.771 0 0 1 8.764 8.761z" class="cls-1" data-name="Trazado 26"/>
+        </g>
+    </g>
+    <g id="Grupo_23" data-name="Grupo 23" transform="translate(10.013 10.013)">
+        <g id="Grupo_22" data-name="Grupo 22">
+            <path id="Trazado_27" d="M138.013 128a10.013 10.013 0 1 0 10.013 10.013A10.014 10.014 0 0 0 138.013 128zm0 16.271a6.258 6.258 0 1 1 6.258-6.258 6.267 6.267 0 0 1-6.258 6.258z" class="cls-1" data-name="Trazado 27" transform="translate(-128 -128)"/>
+        </g>
+    </g>
+    <g id="Grupo_25" data-name="Grupo 25" transform="translate(29.456 7.928)">
+        <g id="Grupo_24" data-name="Grupo 24">
+            <circle id="Elipse_3" cx="1.334" cy="1.334" r="1.334" class="cls-1" data-name="Elipse 3"/>
+        </g>
+    </g>
+</svg>
