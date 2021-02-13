@@ -1,4 +1,4 @@
-# dp6WebMiBodega
+
 
 > a vuetify template along to vue-router, axios and some other stuff.
 
@@ -23,10 +23,6 @@ npm run dev
 # build for production with minification
 npm run build
 ```
-
-## Scope
-0. MAQ - Maquetación
-1. HOME - Inicio
 
 
 
