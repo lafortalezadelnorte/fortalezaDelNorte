@@ -71,9 +71,19 @@ function saveForm() {
 	try {
 		const response = this.$http.post('formulario/enviar.php', body);
 		console.log(response);
+		this.clearForm();
 	} catch (error) {
 		this.showGenericError();
 	}
+}
+
+function clearForm() {
+	this.contact = {
+		name: '',
+		email: '',
+		telefono: '',
+		mensaje: '',
+	};
 }
 
 function data() {
@@ -92,6 +102,7 @@ export default {
 	data,
 	methods: {
 		saveForm,
+		clearForm,
 	},
 };
 </script>
