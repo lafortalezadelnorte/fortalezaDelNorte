@@ -61,6 +61,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 function saveForm() {
 	const body = {
 		nombre: this.contact.name,
@@ -69,7 +71,8 @@ function saveForm() {
 		mensaje: this.contact.message,
 	};
 	try {
-		const response = this.$http.post('formulario/enviar.php', body);
+		const response = axios.post('https://lafortalezadelnorte.com.pe/formulario/enviar.php', body, { 'Access-Control-Allow-Headers': '*' }).then(li => console.log(li)).catch(error => console.log(error));
+		// const response = this.$http.post('formulario/enviar.php', body);
 		console.log(response);
 		this.clearForm();
 	} catch (error) {
