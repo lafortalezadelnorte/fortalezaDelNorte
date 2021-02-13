@@ -5,7 +5,7 @@
 				<img src="/static/images/section/image-contact.png" alt="">
 			</div>
 			<div class="form-contact">
-				<form action="enviar.php" method="post">
+				<form action="contact.php" method="post">
 					<v-flex class="bold title-contact">{{$t('titleContact')}}</v-flex>
 					<div class="user_info">
 						<input :placeholder="$t('placeholderName')" class="input-form" type="text" id="names" name="nombre" required>
@@ -19,7 +19,7 @@
 					<div class="user_info">
 						<textarea :placeholder="$t('placeholderMessage')" class="input-form pt-10" id="mensaje" name="mensaje" required></textarea>
 					</div>
-					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend">
+					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend" >
 				</form>
 			</div>
 			<!-- <div class="form-contact">
