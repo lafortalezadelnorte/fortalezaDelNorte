@@ -6,6 +6,7 @@ const saleInstance = axios.create({
 
 const fortalezaInstance = axios.create({
 	headers: {
+		'Access-Control-Allow-Origin': '*',
 		'Access-Control-Allow-Headers': 'Content-Type',
 	},
 	baseURL: process.env.URL_NORTE,
