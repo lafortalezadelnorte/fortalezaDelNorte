@@ -45,7 +45,9 @@
         for (var file of chunk.files) {
 			if (file.match(/\.(js|css)$/)) { %>
 				<link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>">
-    <% }}} %>
+	<% }}} %>
+	<link rel="preload" as="script" href="chunk.31132ae6680e598f8879.js">
+	<link rel="preload" as="script" href="chunk.d15e7fdfc91b34bb78c4.js">
 	<link rel="preload" href='//fonts.googleapis.com/css?family=Material+Icons' as="style">
 	<!-- <link rel="preload" href='<%= htmlWebpackPlugin.files.publicPath %>static/fonts.css' as="style"> -->
 	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,900&display=swap" as="style">
