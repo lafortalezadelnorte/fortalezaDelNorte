@@ -19,44 +19,10 @@
 					<div class="user_info">
 						<textarea :placeholder="$t('placeholderMessage')" v-model="contact.message" class="input-form pt-10" id="mensaje" name="mensaje" required></textarea>
 					</div>
-					<v-flex class="mt-2 mb-4 gray" text-xs-left v-show="false">Sus campos fueron enviados.</v-flex>
+					<v-flex class="mt-2 mb-4 gray" text-xs-left v-if="showContact">Sus campos fueron enviados.</v-flex>
 					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend">
 				</form>
 			</div>
-			<!-- <div class="form-contact">
-				<v-layout column>
-					<v-flex>
-						<input
-						:placeholder="$t('placeholderName')"
-						class="input-form"
-						type="text">
-					</v-flex>
-					<v-flex>
-						<input
-						:placeholder="$t('placeholderEmail')"
-						class="input-form"
-						type="email">
-					</v-flex>
-					<v-flex>
-						<input
-						:placeholder="$t('placeholderPhone')"
-						class="input-form"
-						type="phone">
-					</v-flex>
-					<v-flex>
-						<textarea
-						:placeholder="$t('placeholderMessage')"
-						class="textarea-contact"></textarea>
-					</v-flex>
-					<v-flex class="left-desktop">
-						<button
-						type="submit"
-						class="btn-submit">
-							{{$t('btnTitleContact')}}
-						</button>
-					</v-flex>
-				</v-layout>
-			</div> -->
 		</div>
 	</div>
 </template>
@@ -65,16 +31,15 @@
 import axios from 'axios';
 
 async function saveForm() {
+	this.showContact = true;
 	const body = {
 		nombre: this.contact.name,
 		correo: this.contact.email,
 		telefono: this.contact.phone,
 		mensaje: this.contact.message,
 	};
-
 	try {
-		const response = axios.post('https://lafortalezadelnorte.com.pe/enviar.php', body);
-		console.log(response);
+		await axios.post('https://lafortalezadelnorte.com.pe/enviar.php', body);
 		this.clearForm();
 	} catch (error) {
 		this.showGenericError();
@@ -82,6 +47,7 @@ async function saveForm() {
 }
 
 function clearForm() {
+	this.showContact = false;
 	this.contact = {
 		name: '',
 		email: '',
@@ -98,6 +64,7 @@ function data() {
 			phone: '',
 			message: '',
 		},
+		showContact: false,
 	};
 }
 
