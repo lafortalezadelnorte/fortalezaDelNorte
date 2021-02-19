@@ -19,6 +19,7 @@
 					<div class="user_info">
 						<textarea :placeholder="$t('placeholderMessage')" v-model="contact.message" class="input-form pt-10" id="mensaje" name="mensaje" required></textarea>
 					</div>
+					<v-flex class="mt-2 mb-4 gray" text-xs-left v-show="false">Sus campos fueron enviados.</v-flex>
 					<input class="btn-submit" type="submit" :value="$t('btnTitleContact')" id="btnSend">
 				</form>
 			</div>
@@ -61,6 +62,8 @@
 </template>
 
 <script>
+import axios from 'axios';
+
 async function saveForm() {
 	const body = {
 		nombre: this.contact.name,
@@ -68,9 +71,9 @@ async function saveForm() {
 		telefono: this.contact.phone,
 		mensaje: this.contact.message,
 	};
+
 	try {
-		// const response = axios.post('https://lafortalezadelnorte.com.pe/formulario/enviar.php', body, { 'Access-Control-Allow-Headers': '*' }).then(li => console.log(li)).catch(error => console.log(error));
-		const response = this.$http.post('formulario/enviar.php', body);
+		const response = axios.post('https://lafortalezadelnorte.com.pe/enviar.php', body);
 		console.log(response);
 		this.clearForm();
 	} catch (error) {
@@ -163,6 +166,8 @@ export default {
 	height: 51px;
 	font-size: 16px;
 	font-weight: 600;
+	text-decoration: none;
+	outline: none;
 	width: 100%;
 
 	@media (min-width: 936px) {

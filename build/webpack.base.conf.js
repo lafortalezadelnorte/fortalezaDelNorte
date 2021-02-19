@@ -28,13 +28,6 @@ module.exports = {
       '@': resolve('src')
     }
   },
-  plugins: [
-    new HtmlWebpackPlugin(),
-    new PreloadWebpackPlugin({
-      rel: 'preload',
-      as: 'script'
-    })
-  ],
   module: {
     rules: [
       {
